@@ -36,6 +36,7 @@ int main(void)
     P2IES &= ~BIT3;                         // P2.3 Low --> High edge
     P2IE |= BIT3;                           // P2.3 interrupt enabled
 
+
     // Disable the GPIO power-on default high-impedance mode
     // to activate previously configured port settings
     PM5CTL0 &= ~LOCKLPM5;
